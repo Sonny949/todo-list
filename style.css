@@ -1,0 +1,39 @@
+:root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(85, 173, 249);
+    text-align: center;
+    font-family: fantasy;
+}
+
+.todo-button {
+    background-color: rgb(244, 151, 29);
+}
+
+body {
+    background-image: linear-gradient(120deg, rgb(57, 56, 56), rgb(172, 172, 172));
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: solid black 1px;
+    background-color: rgb(252, 244, 143);
+}
+

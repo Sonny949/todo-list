@@ -13,16 +13,53 @@
     <header>
         <h1>Git 'er Done!</h1>
     </header>
+    <div class="modal">
+        <div class="task">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>New Task</h2>
+            </div>
+            <div class="modal-body">
+                <form id="newTask">
+                    <div class="form-group">
+                        <label for="task_name">
+                            <strong>Task Name</strong>
+                        </label>
+                        <input type="text" id="task_name" placeholder="What are we gittin done?" name="task_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date_due">
+                            <strong>Date Due</strong>
+                        </label>
+                        <input type="datetime-local" id="date_due" for="date-due" name="date_due">
+                    </div>
+                    <div class="form-group">
+                        <label for="task_desc">
+                            <strong>Task Description</strong>
+                        </label>
+                        <textarea id="task_desc" name="task_desc" rows="5" cols="33">How we gittin' 'er done?</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="importance">
+                            <strong>Importance</strong>
+                        </label>
+                        <select id="importance" placeholder="What are we gittin done?" name="importance">
+                            <option value="low" style="color: green;">Low</option>
+                            <option value="medium" style="color: yellow;">Medium</option>
+                            <option value="high" style="color: red;">High</option>
+                        </select>
+                    </div>
+                    <input id="submit" type="submit" value="Let's git 'er done!">
+                </form>
+            </div>
+        </div>
+    </div>
 
-    <form>
-        <input type="text" class="todo-input">
-        <button class="todo-button" type="submit">
-            <i class="fas fa-plus-square"></i>
-        </button>
-    </form>
+    
+    <button id="todo-button">Add new task!</button>
     <h2>Tasks - To Complete</h2>
     <div class="incomplete">
-        <ul class="todo">
+        <ul class="todos-ul">
 
         </ul>
     </div>
